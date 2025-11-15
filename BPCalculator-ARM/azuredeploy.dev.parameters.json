@@ -2,6 +2,12 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
+    "bp_resource_group_name": {
+      "value": "string"
+    },
+    "bp_webapp_location": {
+      "value": "string"
+    },
     "bp_webapp_plan_name": {
       "value": "String"
     },

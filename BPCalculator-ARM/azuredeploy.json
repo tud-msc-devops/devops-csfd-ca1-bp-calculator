@@ -2,6 +2,12 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
+    "bp_resource_group_name": {
+      "type": "string"
+    },
+    "bp_webapp_location": {
+      "type": "string"
+    },
     "bp_webapp_plan_name": {
       "type": "String"
     },
@@ -22,6 +28,15 @@
 
   },
   "resources": [
+    {
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2025-04-01",
+      "name": "string",
+      "location": "string",
+      "managedBy": "string",
+      "properties": {
+      }
+    }
     {
       "type": "Microsoft.Web/serverfarms",
       "apiVersion": "2024-11-01",
